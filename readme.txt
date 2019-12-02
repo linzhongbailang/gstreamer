@@ -1,20 +1,20 @@
-zlib ±àÒë
+zlib ç¼–è¯‘
 git clone https://github.com/madler/zlib.git          V=1.2.8
-ĞŞ¸ÄMakefile
+ä¿®æ”¹Makefile
 
-ffilib±àÒë
-ÏÂÔØ https://sourceware.org/libffi/      V=3.2.1
+ffilibç¼–è¯‘
+ä¸‹è½½ https://sourceware.org/libffi/      V=3.2.1
 ./configure  CC=/opt/ti_components/os_tools/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc --host=arm-linux --prefix=/home/taohaiwu/works/project/adas/c211/rootfs/targetfs/usr
 make
 
 make install
 
 
-glib±àÒë
-ÏÂÔØ http://ftp.gnome.org/pub/gnome/sources/glib/2.46/
+glibç¼–è¯‘
+ä¸‹è½½ http://ftp.gnome.org/pub/gnome/sources/glib/2.46/
 touch glib.cache
 
-°ÑÒÔÏÂÅäÖÃ·ÅÈëglib.cache 
+æŠŠä»¥ä¸‹é…ç½®æ”¾å…¥glib.cache 
 glib_cv_long_long_format=ll
 glib_cv_stack_grows=no
 glib_cv_have_strlcpy=no
@@ -30,7 +30,7 @@ ac_cv_func_posix_getgrgid_r=yes
  make install
  
  
- //ofilm   gstreamer ±àÒë
+ //ofilm   gstreamer ç¼–è¯‘
 cd workspace/dvr
 
 cd workspace/dvr/build 
@@ -95,6 +95,19 @@ index d25bf31..5c061de 100755
  SPECIFIED_LIB_PATH=${RELEASEDIR}/usr/lib
  PLUGIN_DIR=${SPECIFIED_LIB_PATH}/gstreamer-1.0
 ////**********************************************************************************************************************************/
+
+
+
+//************ç¼–è¯‘ubuntu gstreamer****************************************************************************************************/
+
+
+
+//*********************************************************************************************************************************/
+
+
+
+
+
 
 
 
