@@ -99,18 +99,26 @@ index d25bf31..5c061de 100755
 
 
 //************编译ubuntu gstreamer****************************************************************************************************/
+git clone https://gitlab.freedesktop.org/gstreamer/common.git     //
+
 git clone https://gitlab.freedesktop.org/gstreamer/gstreamer.git
 cd gstreamer/
 git checkout -b local_1.2.3 1.2.3
-git clone https://gitlab.freedesktop.org/gstreamer/common.git     //common 仓库放在gstreamer 目录cd 
+ln -s ../common
 cd ../
+
 git clone https://gitlab.freedesktop.org/gstreamer/gst-plugins-base.git  
 cd gst-plugins-base 
 git checkout -b local_1.2.3 1.2.3 
+ln -s ../common
 cd ../
+
 git clone https://gitlab.freedesktop.org/gstreamer/gst-plugins-good.git
 cd gst-plugins-good
 git checkout -b local_1.2.3 1.2.3 
+ln -s ../common
+cd ../
+
 
 
 
