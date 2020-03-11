@@ -30,13 +30,55 @@ ac_cv_func_posix_getgrgid_r=yes
  make install
  
  
- //ofilm   gstreamer 编译
-cd workspace/dvr
+Your branch is behind 'ofi/cag_c211_dev' by 18 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
 
-cd workspace/dvr/build 
-/********************************envsetup.sh   diff ******************************************************************************************************/
+        modified:   Makefile.Inc
+        modified:   build/build_plugin_bad.sh
+        modified:   build/envsetup.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+taohaiwu@ubuntu:~/works/project/adas/c211/workspace/dvr$ git diff
+diff --git a/Makefile.Inc b/Makefile.Inc
+index d25bf31..772c807 100755
+--- a/Makefile.Inc
++++ b/Makefile.Inc
+@@ -3,7 +3,7 @@
+ ##COMPILE tools
+ ##
+ ##
+-PREFIX=/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7/bin/arm-linux-gnueabihf-
++PREFIX=/home/taohaiwu/works/project/adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
+ AS     = $(PREFIX)as
+ CC     = $(PREFIX)gcc
+ CXX    = $(PREFIX)g++
+@@ -37,7 +37,7 @@ CPPFLAGS = $(CPUFLAGS)
+ ## 
+ CONFIGOPTION = --host=arm-linux-gnueabihf
+ 
+-RELEASEDIR := $(DVR_TOP)/targetfs/
++RELEASEDIR := $(DVR_TOP)/../../rootfs/targetfs
+ SPECIFIED_INCLUDE_PATH=${RELEASEDIR}/usr/include
+ SPECIFIED_LIB_PATH=${RELEASEDIR}/usr/lib
+ PLUGIN_DIR=${SPECIFIED_LIB_PATH}/gstreamer-1.0
+diff --git a/build/build_plugin_bad.sh b/build/build_plugin_bad.sh
+index 886261a..514c23b 100755
+--- a/build/build_plugin_bad.sh
++++ b/build/build_plugin_bad.sh
+@@ -38,7 +38,7 @@ export LIBDCE_CFLAGS="-I${SPECIFIED_INCLUDE_PATH}/dce"
+ 
+ MODULE_NAME=gst-plugins-bad-1.2.3
+ 
+-OPTIONS="--disable-orc --disable-wayland --disable-sbc --disable-vdpau --disable-decklink --disable-uvch264 --disable-bluez --disable-eglgles --disable-curl"
++OPTIONS="--disable-orc --disable-dash --disable-smoothstreaming --disable-wayland --disable-sbc --disable-vdpau --disable-decklink --disable-uvch264 --disable-bluez --disable-eglgles --disable-curl"
+ 
+ start_build
+ 
 diff --git a/build/envsetup.sh b/build/envsetup.sh
-index 52d35e0..2e78f64 100755
+index 52d35e0..f3dfc03 100755
 --- a/build/envsetup.sh
 +++ b/build/envsetup.sh
 @@ -6,7 +6,7 @@
@@ -44,7 +86,7 @@ index 52d35e0..2e78f64 100755
  ##
  #PREFIX=/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7/bin/arm-linux-gnueabihf-
 -PREFIX=/opt/arm-toolchain/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
-+PREFIX=/opt/ti_components/os_tools/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
++PREFIX=/home/taohaiwu/works/project/adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
  AS=${PREFIX}gcc
  CC=${PREFIX}gcc
  CXX=${PREFIX}g++
@@ -66,37 +108,8 @@ index 52d35e0..2e78f64 100755
  
  export PKG_CONFIG_PATH=${SYS_ROOT_DIR}/usr/lib/pkgconfig
 -export PATH=$PATH:/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7/bin
-+export PATH=$PATH:/opt/ti_components/os_tools/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin
-////**********************************************************************************************************************************/
-
-
-////***************************************************************Makefile.Inc   diff *******************************************************************/
-taohaiwu@ubuntu:~/works/project/adas/c211/workspace/dvr$ git diff Makefile.Inc
-diff --git a/Makefile.Inc b/Makefile.Inc
-index d25bf31..5c061de 100755
---- a/Makefile.Inc
-+++ b/Makefile.Inc
-@@ -3,7 +3,7 @@
- ##COMPILE tools
- ##
- ##
--PREFIX=/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7/bin/arm-linux-gnueabihf-
-+PREFIX=/opt/ti_components/os_tools/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
- AS     = $(PREFIX)as
- CC     = $(PREFIX)gcc
- CXX    = $(PREFIX)g++
-@@ -37,7 +37,7 @@ CPPFLAGS = $(CPUFLAGS)
- ## 
- CONFIGOPTION = --host=arm-linux-gnueabihf
- 
--RELEASEDIR := $(DVR_TOP)/targetfs/
-+RELEASEDIR := $(DVR_TOP)/../../rootfs/targetfs
- SPECIFIED_INCLUDE_PATH=${RELEASEDIR}/usr/include
- SPECIFIED_LIB_PATH=${RELEASEDIR}/usr/lib
- PLUGIN_DIR=${SPECIFIED_LIB_PATH}/gstreamer-1.0
-////**********************************************************************************************************************************/
-
-
++export PATH=$PATH:/home/taohaiwu/works/project/adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/
+\ No newline at end of file
 
 //************编译ubuntu gstreamer****************************************************************************************************/
 git clone https://gitlab.freedesktop.org/gstreamer/common.git     //
