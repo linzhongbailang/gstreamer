@@ -1,0 +1,2 @@
+0001-Adds-GST_V4L2_IO_DMABUF-mode-support-in-capture.patch -p1
+0002-gstv4l2src-Optimize-delay-in-capture.patch -p1

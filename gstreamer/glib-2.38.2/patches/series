@@ -1,0 +1,10 @@
+configure-libtool.patch -p1
+fix-conflicting-rand.patch -p1
+add-march-i486-into-CFLAGS-automatically.patch -p1
+glib-2.0-configure-readlink.patch -p1
+0001-gio-Fix-Werror-format-string-errors-from-mismatched-.patch -p1
+ptest-dbus.patch -p1
+ptest-paths.patch -p1
+gtest-skip-fixes.patch -p1
+gio-test-race.patch -p1
+uclibc.patch -p1

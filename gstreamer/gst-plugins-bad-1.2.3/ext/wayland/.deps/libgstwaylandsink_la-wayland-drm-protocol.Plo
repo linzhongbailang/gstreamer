@@ -1,0 +1,109 @@
+libgstwaylandsink_la-wayland-drm-protocol.lo: wayland-drm-protocol.c \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/stdlib.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/features.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/predefs.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/cdefs.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/wordsize.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gnu/stubs.h \
+ /opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stddef.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/waitflags.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/waitstatus.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/endian.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/endian.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/byteswap.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/types.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/types.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/typesizes.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/time.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/select.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/select.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigset.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/time.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/sysmacros.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/pthreadtypes.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/alloca.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/stdint.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/wchar.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/wayland-util.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/math.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_val.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_valf.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_vall.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/inf.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/nan.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/mathdef.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/mathcalls.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/inttypes.h \
+ /opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stdarg.h
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/stdlib.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/features.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/predefs.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/cdefs.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/wordsize.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gnu/stubs.h:
+
+/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stddef.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/waitflags.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/waitstatus.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/endian.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/endian.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/byteswap.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/types.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/types.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/typesizes.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/time.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/select.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/select.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigset.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/time.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/sysmacros.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/pthreadtypes.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/alloca.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/stdint.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/wchar.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/wayland-util.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/math.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_val.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_valf.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_vall.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/inf.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/nan.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/mathdef.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/mathcalls.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/inttypes.h:
+
+/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stdarg.h:

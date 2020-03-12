@@ -1,0 +1,12 @@
+prefix=/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/gstreamer-1.0
+
+Name: GStreamer EGL
+Description: GStreamer EGL library
+Requires: gstreamer-1.0
+Version: 1.2.3
+Libs: -L${libdir} -lgstegl-1.0 -L/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/lib -lEGL -lIMGegl -ldrm_omap -lsrv_um -ldrm 
+Cflags: -I${includedir} -I/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include
+
