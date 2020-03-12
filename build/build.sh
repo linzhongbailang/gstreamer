@@ -64,14 +64,6 @@ then
 	exit $err_code
 fi
 
-./build_misc.sh
-
-err_code=$?
-if [ "$err_code" != "0" ]
-then
-	echo "Build misc Failed, $err_code"
-	exit $err_code
-fi
 
 #generate SDK
 MY_PATH=`pwd`
