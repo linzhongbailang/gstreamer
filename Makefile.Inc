@@ -3,7 +3,7 @@
 ##COMPILE tools
 ##
 ##
-PREFIX=${CURRENT_PATH}/../../../../adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
+PREFIX=/home/taohaiwu/works/project/adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 AS	= $(PREFIX)as
 CC	= $(PREFIX)gcc
 CXX	= $(PREFIX)g++

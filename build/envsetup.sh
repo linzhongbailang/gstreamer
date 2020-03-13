@@ -5,10 +5,8 @@
 ##COMPILE tools
 ##
 ##
-
-CURRENT_PATH=`pwd`
 #PREFIX=/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7/bin/arm-linux-gnueabihf-
-PREFIX=${CURRENT_PATH}/../../../../adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
+PREFIX=/home/taohaiwu/works/project/adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 AS=${PREFIX}gcc
 CC=${PREFIX}gcc
 CXX=${PREFIX}g++
@@ -48,7 +46,7 @@ export CFLAGS=${CPUFLAGS}
 CURRENT_PATH=`pwd`
 
 VERSION=1.2.3
-SYS_ROOT_DIR=${CURRENT_PATH}/../../../../adas/c211/rootfs/common/targetfs
+SYS_ROOT_DIR=${CURRENT_PATH}/../../../rootfs/common/targetfs
 HOST=arm-linux-gnueabihf
 INSTALL_PATH=${SYS_ROOT_DIR}/usr
 
@@ -59,4 +57,4 @@ SPECIFIED_INCLUDE_PATH=${SYS_ROOT_DIR}/usr/include
 SPECIFIED_LIB_PATH=${SYS_ROOT_DIR}/usr/lib
 
 export PKG_CONFIG_PATH=${SYS_ROOT_DIR}/usr/lib/pkgconfig
-export PATH=$PATH:${CURRENT_PATH}/../../../../adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/
+export PATH=$PATH:/home/taohaiwu/works/project/adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/
