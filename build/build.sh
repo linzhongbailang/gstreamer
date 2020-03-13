@@ -36,9 +36,8 @@ then
 	exit $err_code
 fi
 
-echo "--------------start build plugin base----------------"
+echo "--------------start build plugin base base----------------"
 ./build_plugin_base.sh
-
 err_code=$?
 if [ "$err_code" != "0" ]
 then
@@ -46,8 +45,8 @@ then
 	exit $err_code
 fi
 
+echo "--------------start build plugin good----------------"
 ./build_plugin_good.sh
-
 err_code=$?
 if [ "$err_code" != "0" ]
 then
@@ -55,8 +54,8 @@ then
 	exit $err_code
 fi
 
+echo "--------------start build plugin bad----------------"
 ./build_plugin_bad.sh
-
 err_code=$?
 if [ "$err_code" != "0" ]
 then
@@ -64,7 +63,16 @@ then
 	exit $err_code
 fi
 
+echo "--------------start build plugin misc----------------"
+./build_misc.sh
+err_code=$?
+if [ "$err_code" != "0" ]
+then
+	echo "Build misc Failed, $err_code"
+	exit $err_code
+fi
 
+echo "--------------start generate SDK----------------"
 #generate SDK
 MY_PATH=`pwd`
 SDK_PATH=${MY_PATH}/../${HOST}
