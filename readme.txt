@@ -29,7 +29,9 @@ ac_cv_func_posix_getgrgid_r=yes
  make 
  make install
  
- 
+
+ //************编译ofilm gstreamer****************************************************************************************************/
+
 Your branch is behind 'ofi/cag_c211_dev' by 18 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
 Changes not staged for commit:
