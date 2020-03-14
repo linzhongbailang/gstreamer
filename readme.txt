@@ -121,20 +121,35 @@ cd gstreamer/
 git checkout -b local_1.2.3 1.2.3
 ln -s ../common
 cd ../
+./autogen.sh 
+make 
+make install
 
 git clone https://gitlab.freedesktop.org/gstreamer/gst-plugins-base.git  
 cd gst-plugins-base 
 git checkout -b local_1.2.3 1.2.3 
-ln -s ../common
-cd ../
+ln -s ../common ./
+./configure
+make 
+make install
 
 git clone https://gitlab.freedesktop.org/gstreamer/gst-plugins-good.git
 cd gst-plugins-good
 git checkout -b local_1.2.3 1.2.3 
 ln -s ../common
+./autogen.sh 
+./configure
+make 
+make install
+
+git clone https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad.git
+cd gst-plugins-bad
+git checkout -b local_1.2.3 1.2.3 
+ln -s ../common
 cd ../
-
-
+./autogen.sh 
+make 
+make install
 
 
 
