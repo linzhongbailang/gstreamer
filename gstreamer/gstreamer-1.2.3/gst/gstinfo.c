@@ -410,6 +410,12 @@ _priv_gst_debug_init (void)
 
 /* we can't do this further above, because we initialize the GST_CAT_DEFAULT struct */
 #define GST_CAT_DEFAULT _GST_CAT_DEBUG
+static gchar g_gst_log_is_ofilm=0;
+
+void
+gst_debug_log_of (GstDebugCategory * category, GstDebugLevel level,
+    const gchar * file, const gchar * function, gint line,
+    GObject * object, const gchar * format, va_list args);
 
 /**
  * gst_debug_log:
@@ -430,13 +436,30 @@ gst_debug_log (GstDebugCategory * category, GstDebugLevel level,
     const gchar * file, const gchar * function, gint line,
     GObject * object, const gchar * format, ...)
 {
-  va_list var_args;
+    if(g_gst_log_is_ofilm==1)
+    {
+        va_list var_args;
 
-  va_start (var_args, format);
-  gst_debug_log_valist (category, level, file, function, line, object, format,
-      var_args);
-  va_end (var_args);
+        va_start (var_args, format);
+        gst_debug_log_of(category, level, file, function, line, object, format,var_args);
+        
+        va_end (var_args);
+    }
+    else
+    {
+        va_list var_args;
+        
+        va_start (var_args, format);
+        gst_debug_log_valist (category, level, file, function, line, object, format,
+          var_args);
+        va_end (var_args);
+
+    }
+
+  
 }
+
+
 
 #ifdef G_OS_WIN32
 /* based on g_basename(), which we can't use because it was deprecated */
@@ -503,6 +526,7 @@ gst_debug_log_valist (GstDebugCategory * category, GstDebugLevel level,
   G_VA_COPY (message.arguments, args);
 
   handler = __log_functions;
+  
   while (handler) {
     entry = handler->data;
     handler = g_slist_next (handler);
@@ -512,6 +536,11 @@ gst_debug_log_valist (GstDebugCategory * category, GstDebugLevel level,
   g_free (message.message);
   va_end (message.arguments);
 }
+
+
+
+
+        
 
 /**
  * gst_debug_message_get:
@@ -1064,6 +1093,105 @@ gst_debug_log_default (GstDebugCategory * category, GstDebugLevel level,
   }
 
   g_free (obj);
+}
+
+typedef void(*PFN_DVR_SDK_CONSOLE)( void *pContext, signed int nLevel,  const char *szString);
+
+PFN_DVR_SDK_CONSOLE g_consoleCallback = NULL;
+void *g_consoleCallbackContext = NULL;
+gchar log_pri[1024];
+
+
+void gst_debug_log_config(PFN_DVR_SDK_CONSOLE pCallback, void *pContext )
+{
+    g_gst_log_is_ofilm=1;
+    g_consoleCallback = pCallback;
+	g_consoleCallbackContext = pContext;
+
+}
+    
+void
+gst_debug_log_of (GstDebugCategory * category, GstDebugLevel level,
+    const gchar * file, const gchar * function, gint line,
+    GObject * object, const gchar * format, va_list args)
+{
+
+    GstDebugMessage message;
+    LogFuncEntry *entry;
+    GSList *handler;
+    gint pid;
+    GstClockTime elapsed;
+    gchar *obj = NULL;
+    GstDebugColorMode color_mode;
+
+    g_return_if_fail (category != NULL);
+    g_return_if_fail (file != NULL);
+    g_return_if_fail (function != NULL);
+    g_return_if_fail (format != NULL);
+
+    memset(log_pri,0,sizeof(log_pri));
+
+    message.message = NULL;
+    message.format = format;
+    G_VA_COPY (message.arguments, args);
+  
+    if (level > gst_debug_category_get_threshold (category))
+      return;
+
+    pid = getpid ();
+    color_mode = gst_debug_get_color_mode ();
+
+    if (object) {
+      obj = gst_debug_print_object (object);
+    } else {
+      obj = g_strdup ("");
+    }
+
+    elapsed = GST_CLOCK_DIFF (_priv_gst_info_start_time,
+        gst_util_get_timestamp ());
+
+
+    if (color_mode != GST_DEBUG_COLOR_MODE_OFF) {
+        /* colors, non-windows */
+        gchar *color = NULL;
+        const gchar *clear;
+        gchar pidcolor[10];
+        const gchar *levelcolor;
+
+        color = gst_debug_construct_term_color (gst_debug_category_get_color
+            (category));
+        clear = "\033[00m";
+        g_sprintf (pidcolor, "\033[3%1dm", pid % 6 + 31);
+        levelcolor = levelcolormap[level];
+
+#define PRINT_FMT " %s"PID_FMT"%s "PTR_FMT" %s%s%s %s"CAT_FMT"%s %s"
+        sprintf (log_pri, "tao555 %" GST_TIME_FORMAT PRINT_FMT, GST_TIME_ARGS (elapsed),
+            pidcolor, pid, clear, g_thread_self (), levelcolor,
+            gst_debug_level_get_name (level), clear, color,
+            gst_debug_category_get_name (category), file, line, function, obj,
+            clear, gst_debug_message_get (&message));
+        //printf ("tao333 %s\n",log_pri);
+        g_consoleCallback(g_consoleCallbackContext, 2, log_pri);
+#undef PRINT_FMT
+        g_free (color);
+    } 
+    else {
+      /* no color, all platforms */
+#define PRINT_FMT " "PID_FMT" "PTR_FMT" %s "CAT_FMT" %s"
+      sprintf (log_pri, PRINT_FMT,
+          pid, g_thread_self (), gst_debug_level_get_name (level),
+          gst_debug_category_get_name (category), file, line, function, obj,
+          gst_debug_message_get (&message));
+        //printf ("tao222 %s\n",log_pri);
+        g_consoleCallback(g_consoleCallbackContext, 2, log_pri);
+#undef PRINT_FMT
+    }
+    g_free (obj);
+
+
+    g_free (message.message);
+    va_end (message.arguments);
+   
 }
 
 /**
