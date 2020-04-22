@@ -4,7 +4,7 @@ git clone https://github.com/madler/zlib.git          V=1.2.8
 
 ffilib编译
 下载 https://sourceware.org/libffi/      V=3.2.1
-./configure  CC=/home/taohaiwu/works/project/adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc --host=arm-linux --prefix=/home/taohaiwu/works/project/adas/c211/rootfs/targetfs/usr
+./configure  CC=/home/taohaiwu/works/project/adas/c211_repo/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc --host=arm-linux --prefix=/home/taohaiwu/works/project/adas/c211_repo/rootfs/common/targetfs/usr
 make
 
 make install
@@ -25,7 +25,7 @@ glib_cv_rtldglobal_broken=no
 ac_cv_func_posix_getpwuid_r=yes
 ac_cv_func_posix_getgrgid_r=yes
 
-./configure --prefix=/home/taohaiwu/works/project/adas/c211/rootfs/project/targetfs/usr   CC=/home/taohaiwu/works/project/adas/c211/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc --host=arm-linux LIBFFI_CFLAGS="-I/home/taohaiwu/works/project/adas/c211/rootfs/project/targetfs/usr/lib/libffi-3.2.1/include" LIBFFI_LIBS="-lffi -L/home/taohaiwu/works/project/adas/c211/rootfs/project/targetfs/usr/lib" ZLIB_CFLAGS="-I/home/taohaiwu/works/project/adas/c211/rootfs/project/targetfs/usr/include" ZLIB_LIBS="-lz -L/home/taohaiwu/works/project/adas/c211/rootfs/project/targetfs/usr/lib"   --cache-file=glib.cache   --disable-selinux  --disable-xattr --disable-libelf 
+./configure --prefix=/home/taohaiwu/works/project/adas/c211_repo/rootfs/common/targetfs/usr   CC=/home/taohaiwu/works/project/adas/c211_repo/ti_components/os_tools/linux/linaro/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc --host=arm-linux LIBFFI_CFLAGS="-I/home/taohaiwu/works/project/adas/c211_repo/rootfs/common/targetfs/usr/lib/libffi-3.2.1/include" LIBFFI_LIBS="-lffi -L/home/taohaiwu/works/project/adas/c211_repo/rootfs/common/targetfs/usr/lib" ZLIB_CFLAGS="-I/home/taohaiwu/works/project/adas/c211_repo/rootfs/common/targetfs/usr/include" ZLIB_LIBS="-lz -L/home/taohaiwu/works/project/adas/c211_repo/rootfs/common/targetfs/usr/lib"   --cache-file=glib.cache   --disable-selinux  --disable-xattr --disable-libelf 
  make 
  make install
  
