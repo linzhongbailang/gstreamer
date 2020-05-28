@@ -1,0 +1,720 @@
+libgstvideobox_la-gstvideobox.lo: gstvideobox.c ../../config.h \
+ gstvideobox.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gst.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/galloca.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtypes.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/lib/glib-2.0/include/glibconfig.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmacros.h \
+ /opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stddef.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/limits.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/features.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/predefs.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/cdefs.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/wordsize.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gnu/stubs.h \
+ /opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include-fixed/limits.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/posix1_lim.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/local_lim.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/linux/limits.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/posix2_lim.h \
+ /opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/float.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gversionmacros.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/time.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/time.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/types.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/typesizes.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/xlocale.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/garray.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gasyncqueue.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gthread.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gatomic.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gerror.h \
+ /opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stdarg.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gquark.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gbacktrace.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/signal.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigset.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/signum.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/siginfo.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigaction.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigcontext.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/asm/sigcontext.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigstack.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/ucontext.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/pthreadtypes.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/endian.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/endian.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/byteswap.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigthread.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gbase64.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gbitlock.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gbookmarkfile.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gbytes.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gcharset.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gchecksum.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gconvert.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gdataset.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gdate.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gdatetime.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtimezone.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gdir.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/dirent.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/dirent.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/genviron.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gfileutils.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/ggettext.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/ghash.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/glist.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmem.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gnode.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/ghmac.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gchecksum.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/ghook.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/ghostutils.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/giochannel.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmain.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gpoll.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gslist.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gstring.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gunicode.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gutils.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gkeyfile.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmappedfile.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmarkup.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmessages.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/goption.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gpattern.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gprimes.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gqsort.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gqueue.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/grand.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gregex.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gscanner.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gsequence.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gshell.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gslice.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gspawn.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gstrfuncs.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gstringchunk.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtestutils.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gthreadpool.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtimer.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtrashstack.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtree.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gurifuncs.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gvarianttype.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gvariant.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gversion.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/gallocator.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/gcache.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/gcompletion.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/gmain.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/grel.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/gthread.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/pthread.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sched.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sched.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/setjmp.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/glib-compat.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstenumtypes.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib-object.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gbinding.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gobject.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gtype.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gvalue.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gparam.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gclosure.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gsignal.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gmarshal.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gboxed.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/glib-types.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/genums.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gparamspecs.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gsourceclosure.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gtypemodule.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gtypeplugin.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gvaluearray.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gvaluetypes.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstversion.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstbin.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstelement.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstconfig.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstobject.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcontrolbinding.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcontrolsource.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstclock.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpad.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstbuffer.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstminiobject.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstallocator.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstmemory.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstmeta.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstbufferlist.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcaps.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gststructure.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstdatetime.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcapsfeatures.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpadtemplate.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstevent.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstformat.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstiterator.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttaglist.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstsample.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstsegment.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstmessage.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstquery.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttoc.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcontext.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttask.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttaskpool.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstbus.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstelementfactory.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstplugin.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstmacros.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpluginfeature.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsturi.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstbufferpool.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstchildproxy.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstdebugutils.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstelementmetadata.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsterror.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/errno.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/errno.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/linux/errno.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/asm/errno.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/asm-generic/errno.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/asm-generic/errno-base.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstghostpad.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstinfo.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstparamspecs.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstvalue.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpipeline.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpoll.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpreset.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstregistry.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstsystemclock.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttagsetter.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttocsetter.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttypefind.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttypefindfactory.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstutils.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstparse.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcompat.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideofilter.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/base/gstbasetransform.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-format.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-enumtypes.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-chroma.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-color.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-info.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-frame.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/colorbalancechannel.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/colorbalance.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideodecoder.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/base/gstadapter.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideoutils.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideoencoder.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideometa.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideopool.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideosink.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/base/gstbasesink.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/navigation.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-blend.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-event.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/videoorientation.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-overlay-composition.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/videooverlay.h \
+ gstvideoboxorc.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/stdint.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/wchar.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/math.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_val.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_valf.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_vall.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/inf.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/nan.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/mathdef.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/mathcalls.h \
+ /home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/string.h
+
+../../config.h:
+
+gstvideobox.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gst.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/galloca.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtypes.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/lib/glib-2.0/include/glibconfig.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmacros.h:
+
+/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stddef.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/limits.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/features.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/predefs.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/cdefs.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/wordsize.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gnu/stubs.h:
+
+/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include-fixed/limits.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/posix1_lim.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/local_lim.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/linux/limits.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/posix2_lim.h:
+
+/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/float.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gversionmacros.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/time.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/time.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/types.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/typesizes.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/xlocale.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/garray.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gasyncqueue.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gthread.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gatomic.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gerror.h:
+
+/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stdarg.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gquark.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gbacktrace.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/signal.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigset.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/signum.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/siginfo.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigaction.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigcontext.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/asm/sigcontext.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigstack.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sys/ucontext.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/pthreadtypes.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/endian.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/endian.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/byteswap.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sigthread.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gbase64.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gbitlock.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gbookmarkfile.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gbytes.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gcharset.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gchecksum.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gconvert.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gdataset.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gdate.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gdatetime.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtimezone.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gdir.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/dirent.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/dirent.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/genviron.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gfileutils.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/ggettext.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/ghash.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/glist.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmem.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gnode.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/ghmac.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gchecksum.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/ghook.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/ghostutils.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/giochannel.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmain.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gpoll.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gslist.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gstring.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gunicode.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gutils.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gkeyfile.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmappedfile.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmarkup.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gmessages.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/goption.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gpattern.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gprimes.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gqsort.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gqueue.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/grand.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gregex.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gscanner.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gsequence.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gshell.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gslice.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gspawn.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gstrfuncs.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gstringchunk.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtestutils.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gthreadpool.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtimer.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtrashstack.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gtree.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gurifuncs.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gvarianttype.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gvariant.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/gversion.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/gallocator.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/gcache.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/gcompletion.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/gmain.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/grel.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib/deprecated/gthread.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/pthread.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/sched.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/sched.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/setjmp.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/glib-compat.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstenumtypes.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/glib-object.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gbinding.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gobject.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gtype.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gvalue.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gparam.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gclosure.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gsignal.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gmarshal.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gboxed.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/glib-types.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/genums.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gparamspecs.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gsourceclosure.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gtypemodule.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gtypeplugin.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gvaluearray.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/glib-2.0/gobject/gvaluetypes.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstversion.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstbin.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstelement.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstconfig.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstobject.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcontrolbinding.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcontrolsource.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstclock.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpad.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstbuffer.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstminiobject.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstallocator.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstmemory.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstmeta.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstbufferlist.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcaps.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gststructure.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstdatetime.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcapsfeatures.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpadtemplate.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstevent.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstformat.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstiterator.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttaglist.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstsample.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstsegment.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstmessage.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstquery.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttoc.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcontext.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttask.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttaskpool.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstbus.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstelementfactory.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstplugin.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstmacros.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpluginfeature.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsturi.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstbufferpool.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstchildproxy.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstdebugutils.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstelementmetadata.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsterror.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/errno.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/errno.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/linux/errno.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/asm/errno.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/asm-generic/errno.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/asm-generic/errno-base.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstghostpad.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstinfo.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstparamspecs.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstvalue.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpipeline.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpoll.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstpreset.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstregistry.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstsystemclock.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttagsetter.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttocsetter.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttypefind.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gsttypefindfactory.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstutils.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstparse.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/gstcompat.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideofilter.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/base/gstbasetransform.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-format.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-enumtypes.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-chroma.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-color.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-info.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-frame.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/colorbalancechannel.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/colorbalance.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideodecoder.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/base/gstadapter.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideoutils.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideoencoder.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideometa.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideopool.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/gstvideosink.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/base/gstbasesink.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/navigation.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-blend.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-event.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/videoorientation.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/video-overlay-composition.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/gstreamer-1.0/gst/video/videooverlay.h:
+
+gstvideoboxorc.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/stdint.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/wchar.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/math.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_val.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_valf.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/huge_vall.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/inf.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/nan.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/mathdef.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/bits/mathcalls.h:
+
+/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr/include/string.h:

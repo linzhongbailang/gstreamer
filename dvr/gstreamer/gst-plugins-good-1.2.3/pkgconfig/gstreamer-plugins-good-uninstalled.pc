@@ -1,0 +1,13 @@
+prefix=
+exec_prefix=
+libdir=/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-good-1.2.3/gst-libs/gst
+includedir=/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-good-1.2.3/gst-libs
+pluginsdir=/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-good-1.2.3
+
+Name: GStreamer Good Plugins, Uninstalled
+Description: Streaming media framework, good plugins, uninstalled
+Version: 1.2.3
+Requires: gstreamer-1.0 gstreamer-plugins-base-1.0
+
+Libs: 
+Cflags: 

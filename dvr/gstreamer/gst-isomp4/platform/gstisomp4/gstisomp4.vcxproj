@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DA184C0D-354C-4A90-916A-FC78EE85DAD2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gstisomp4</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GSTISOMP4_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(GSTREAMER_1_0_ROOT_X86)\include\gstreamer-1.0;$(GSTREAMER_1_0_ROOT_X86)\include\glib-2.0;$(GSTREAMER_1_0_ROOT_X86)\lib\glib-2.0\include;..\..\isomp4;..\..\..\gstcanbuf\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(GSTREAMER_1_0_ROOT_X86)\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glib-2.0.lib;gobject-2.0.lib;gio-2.0.lib;gmodule-2.0.lib;gstbase-1.0.lib;gstreamer-1.0.lib;gstpbutils-1.0.lib;gstapp-1.0.lib;gstvideo-1.0.lib;gstaudio-1.0.lib;gsttag-1.0.lib;gstrtp-1.0.lib;gstriff-1.0.lib;libgstcanbuf.lib</AdditionalDependencies>
+      <OutputFile>$(GSTREAMER_1_0_ROOT_X86)\lib\gstreamer-1.0\libgstisomp4.dll</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GSTISOMP4_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\isomp4\atoms.c" />
+    <ClCompile Include="..\..\isomp4\atomsrecovery.c" />
+    <ClCompile Include="..\..\isomp4\bitstream.c" />
+    <ClCompile Include="..\..\isomp4\descriptors.c" />
+    <ClCompile Include="..\..\isomp4\fifobuffer.c" />
+    <ClCompile Include="..\..\isomp4\gstqtmoovrecover.c" />
+    <ClCompile Include="..\..\isomp4\gstqtmux-doc.c" />
+    <ClCompile Include="..\..\isomp4\gstqtmux.c" />
+    <ClCompile Include="..\..\isomp4\gstqtmuxmap.c" />
+    <ClCompile Include="..\..\isomp4\gstrtpxqtdepay.c" />
+    <ClCompile Include="..\..\isomp4\isomp4-plugin.c" />
+    <ClCompile Include="..\..\isomp4\properties.c" />
+    <ClCompile Include="..\..\isomp4\qtdemux.c" />
+    <ClCompile Include="..\..\isomp4\qtdemux_dump.c" />
+    <ClCompile Include="..\..\isomp4\qtdemux_lang.c" />
+    <ClCompile Include="..\..\isomp4\qtdemux_types.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\isomp4\atoms.h" />
+    <ClInclude Include="..\..\isomp4\atomsrecovery.h" />
+    <ClInclude Include="..\..\isomp4\bitstream.h" />
+    <ClInclude Include="..\..\isomp4\descriptors.h" />
+    <ClInclude Include="..\..\isomp4\fifobuffer.h" />
+    <ClInclude Include="..\..\isomp4\fourcc.h" />
+    <ClInclude Include="..\..\isomp4\ftypcc.h" />
+    <ClInclude Include="..\..\isomp4\gstqtmoovrecover.h" />
+    <ClInclude Include="..\..\isomp4\gstqtmux-doc.h" />
+    <ClInclude Include="..\..\isomp4\gstqtmux.h" />
+    <ClInclude Include="..\..\isomp4\gstqtmuxmap.h" />
+    <ClInclude Include="..\..\isomp4\gstrtpxqtdepay.h" />
+    <ClInclude Include="..\..\isomp4\properties.h" />
+    <ClInclude Include="..\..\isomp4\qtatomparser.h" />
+    <ClInclude Include="..\..\isomp4\qtdemux.h" />
+    <ClInclude Include="..\..\isomp4\qtdemux_dump.h" />
+    <ClInclude Include="..\..\isomp4\qtdemux_fourcc.h" />
+    <ClInclude Include="..\..\isomp4\qtdemux_lang.h" />
+    <ClInclude Include="..\..\isomp4\qtdemux_types.h" />
+    <ClInclude Include="..\..\isomp4\qtpalette.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

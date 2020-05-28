@@ -1,0 +1,78 @@
+libgstgoom_la-config_param.lo: config_param.c goom_config_param.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/stdlib.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/features.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/predefs.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/sys/cdefs.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/wordsize.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/gnu/stubs.h \
+ /opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stddef.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/waitflags.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/waitstatus.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/endian.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/endian.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/byteswap.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/sys/types.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/types.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/typesizes.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/time.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/sys/select.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/select.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/sigset.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/time.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/sys/sysmacros.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/pthreadtypes.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/alloca.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/string.h \
+ /home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/xlocale.h
+
+goom_config_param.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/stdlib.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/features.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/predefs.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/sys/cdefs.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/wordsize.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/gnu/stubs.h:
+
+/opt/arm-toolchain/linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/include/stddef.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/waitflags.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/waitstatus.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/endian.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/endian.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/byteswap.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/sys/types.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/types.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/typesizes.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/time.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/sys/select.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/select.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/sigset.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/time.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/sys/sysmacros.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/bits/pthreadtypes.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/alloca.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/string.h:
+
+/home/chencb/samba/workdir/J6_Gstreamer/build/linux_arm/../../targetfs/usr/include/xlocale.h:

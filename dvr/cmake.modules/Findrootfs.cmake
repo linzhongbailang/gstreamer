@@ -1,0 +1,15 @@
+if(NOT rootfs_FOUND)
+    if(NOT DEFINED $ENV{J6_ROOTFS})
+        set(J6_ROOTFS ${PROJECT_SOURCE_DIR}/../rootfs)
+    else()
+        set(J6_ROOTFS $ENV{J6_ROOTFS})
+    endif()
+
+    if(EXISTS ${J6_ROOTFS}/usr/lib)
+        message("[dvr] Rootfs: ${J6_ROOTFS}")
+        set(rootfs_FOUND TRUE)
+    else()
+        message(FATAL_ERROR "No rootfs directory found for j6, please SET J6_ROOTFS to a valid rootfs directory, \n\t or make sure there is a named rootfs exists in project directory for j6!")
+    endif()
+ENDIF()
+    

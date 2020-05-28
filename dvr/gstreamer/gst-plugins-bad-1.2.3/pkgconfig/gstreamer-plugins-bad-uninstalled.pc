@@ -1,0 +1,14 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs
+pluginsdir=/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3
+
+Name: GStreamer Bad Plugin libraries, Uninstalled
+Description: Streaming media framework, bad plugins libraries, uninstalled
+Version: 1.2.3
+Requires: gstreamer-1.0
+Libs: -L/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs/gst/basecamerabinsrc -L/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs/gst/codecparsers -L/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs/gst/drm -L/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs/gst/egl -L/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs/gst/insertbin -L/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs/gst/interfaces -L/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs/gst/mpegts -L/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs/gst/signalprocessor -L/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs/gst/video
+Cflags: -I/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs -I/home/chencb/samba/workdir/J6_GitRepo/dvr/gstreamer/gst-plugins-bad-1.2.3/gst-libs

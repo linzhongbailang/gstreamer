@@ -1,0 +1,441 @@
+/*******************************************************************************
+* Copyright 2003 O-Film Technologies, Inc., All Rights Reserved.
+* O-Film Confidential
+*
+* DESCRIPTION:
+*
+* ABBREVIATIONS:
+*   TODO: List of abbreviations used, or reference(s) to external document(s)
+*
+* TRACEABILITY INFO:
+*   Design Document(s):
+*     TODO: Update list of design document(s)
+*
+*   Requirements Document(s):
+*     TODO: Update list of requirements document(s)
+*
+*   Applicable Standards (in order of precedence: highest first):
+*
+* DEVIATIONS FROM STANDARDS:
+*   TODO: List of deviations from standards in this file, or
+*   None.
+*
+\*********************************************************************************/
+#ifndef _DVR_GUI_OBJ_H_
+#define _DVR_GUI_OBJ_H_
+
+#ifdef DVR_FEATURE_V302
+#define NUM_THUMBNAIL_PER_PAGE	6
+#else
+#define NUM_THUMBNAIL_PER_PAGE	8
+#endif
+
+typedef enum
+{
+	DVR_USER_CLICK_MAIN_MENU = 0,
+		
+	DVR_USER_CLICK_RECORD_SWITCH,
+	DVR_USER_CLICK_PHOTO_SHUTTER,
+	DVR_USER_CLICK_EVENT_RECORD,
+	DVR_USER_CLICK_LIVE_VIEW,
+    DVR_USER_CLICK_DAS_RECORD_START,
+    DVR_USER_CLICK_DAS_RECORD_STOP,
+    DVR_USER_CLICK_IACC_RECORD,
+    DVR_USER_CLICK_ALARM_RECORD_START,
+    DVR_USER_CLICK_ALARM_RECORD_STOP,
+
+	DVR_USER_CLICK_THUMB_TAB,
+	DVR_USER_CLICK_THUMB_NEXT_PAGE,
+	DVR_USER_CLICK_THUMB_PREV_PAGE,
+	DVR_USER_CLICK_THUMB_SEL_TO_PLAY,	
+	DVR_USER_CLICK_THUMB_EDIT,
+	DVR_USER_CLICK_THUMB_EDIT_CANCEL,
+	DVR_USER_CLICK_THUMB_EDIT_SAVE,
+	DVR_USER_CLICK_THUMB_EDIT_DELETE,
+	DVR_USER_CLICK_THUMB_EDIT_SELECT_ALL,
+	DVR_USER_CLICK_THUMB_EDIT_SEL,
+
+	DVR_USER_CLICK_PLAYER_MODE,
+	DVR_USER_CLICK_PLAYER_SAVE,
+	DVR_USER_CLICK_PLAYER_DELETE,
+	DVR_USER_CLICK_PLAYER_DC_SWITCH,
+	DVR_USER_CLICK_PLAYER_VIEW,
+	DVR_USER_CLICK_PLAYER_PLAY,
+	DVR_USER_CLICK_PLAYER_PREV,
+	DVR_USER_CLICK_PLAYER_NEXT,
+	DVR_USER_CLICK_PLAYER_SPEED,
+	DVR_USER_CLICK_PLAYER_SEEK,
+	DVR_USER_CLICK_PLAYER_SCREEN_SHOT,
+	DVR_USER_CLICK_PLAYER_QUIT,
+
+	DVR_USER_CLICK_SETUP_LOOPENC_SPLIT_TIME,
+	DVR_USER_CLICK_SETUP_VIDEO_QUALITY,
+	DVR_USER_CLICK_SETUP_PHOTO_QUALITY,
+	DVR_USER_CLICK_SETUP_FORMAT_CARD,
+
+	DVR_USER_CLICK_DIALOG,
+    DVR_USER_CLICK_SIDEBAR,
+	DVR_SHUTDOWN
+	
+}DVR_USER_BEHAVIOR_TYPE;
+
+typedef enum
+{
+	/*general*/
+	GUI_OBJ_ID_MAIN_MENU_TAB = 0,
+	GUI_OBJ_ID_WARNING,
+	GUI_OBJ_ID_CARD_STATE,
+
+	/*record mode*/
+	GUI_OBJ_ID_REC_SWITCH,
+	GUI_OBJ_ID_REC_STATE,
+	GUI_OBJ_ID_REC_EVENT_RECORD_STATE,
+	GUI_OBJ_ID_REC_VIEW_INDEX,
+	GUI_OBJ_ID_REC_VEHICLE_DATA,
+
+	/*thumbnail mode*/
+	GUI_OBJ_ID_THUMB_TAB,
+	GUI_OBJ_ID_THUMB_EDIT,
+	GUI_OBJ_ID_THUMB_EDIT_SEL_CHECKBOX,
+	GUI_OBJ_ID_THUMB_FRAME,
+	GUI_OBJ_ID_THUMB_CAPACITY,
+    GUI_OBJ_ID_THUMB_PAGE_NUM,
+
+	/*playback mode*/
+	GUI_OBJ_ID_PB_PLAY_STATE,
+	GUI_OBJ_ID_PB_PLAY_TIMER,
+	GUI_OBJ_ID_PB_PLAY_SPEED,
+	GUI_OBJ_ID_PB_FILENAME,
+	GUI_OBJ_ID_PB_VIEW_INDEX,
+	GUI_OBJ_ID_PB_DC_SWITCH,
+    GUI_OBJ_ID_PB_MODE,
+	GUI_OBJ_ID_PB_VEHICLE_DATA,
+
+	/*setup*/
+	GUI_OBJ_ID_SETUP_SPLIT_TIME,
+	GUI_OBJ_ID_SETUP_VIDEO_QUALITY,
+	GUI_OBJ_ID_SETUP_PHOTO_QUALITY,
+	GUI_OBJ_ID_SETUP_FORMAT_CARD,
+
+	/*quick menu*/
+	GUI_OBJ_ID_DIALOG, /*dialog*/
+    GUI_OBJ_ID_SIDEBAR,
+
+	GUI_OBJ_ID_NUM
+}GUI_OBJ_ID;
+
+typedef enum
+{
+	GUI_MAIN_MENU_TAB_RECORD = 0,
+	GUI_MAIN_MENU_TAB_THUMB,
+	GUI_MAIN_MENU_TAB_SETUP,
+	GUI_MAIN_MENU_TAB_NUM
+}GUI_MAIN_MENU_TAB;
+
+typedef enum
+{
+	GUI_CARD_STATE_NO_CARD = 0,
+	GUI_CARD_STATE_READY,
+	GUI_CARD_STATE_NUM
+}GUI_CARD_STATE;
+
+typedef enum
+{
+	GUI_WARNING_NONE = -1,
+	GUI_WARNING_PROCESSING,
+	GUI_WARNING_NO_FILES,
+	GUI_WARNING_NO_CARD,
+	GUI_WARNING_CARD_PROTECTED,
+	GUI_WARNING_CARD_FULL,
+	GUI_WARNING_CARD_FRAGMENT_FAIL,
+	GUI_WARNING_FORMAT_CARD_SUCCESS,
+	GUI_WARNING_FORMAT_CARD_FAIL,
+	GUI_WARNING_DELETE_SUCCESS,
+	GUI_WARNING_ERROR_FILE,
+	GUI_WARNING_NUM,
+}GUI_WARNING_ID;
+
+typedef enum
+{
+	GUI_DIALOG_TYPE_OK,
+	GUI_DIALOG_TYPE_Y_N,
+	GUI_DIALOG_TYPE_NUM
+}GUI_DIALOG_TYPE;
+
+typedef enum
+{
+	DIALOG_SUBJECT_DEL = 0,
+	DIALOG_SUBJECT_FORMATCARD,
+	DIALOG_SUBJECT_FORMATCARD_CAUTION,
+	DIALOG_SUBJECT_FORMATCARD_OK,
+	DIALOG_SUBJECT_FORMATCARD_FAILED,
+	DIALOG_SUBJECT_NUM
+}DIALOG_SUBJECT_ID;
+
+typedef enum
+{
+	DIALOG_SEL_OK = 0,
+	DIALOG_SEL_NO = 0,
+	DIALOG_SEL_YES = 1,
+	DIALOG_SEL_NUM
+}DIALOG_SELECT_OPTION;
+
+typedef enum
+{
+	GUI_SWITCH_STATE_OFF,
+	GUI_SWITCH_STATE_ON,
+	GUI_SWITCH_STATE_NUM
+}GUI_SWITCH_STATE;
+
+typedef enum
+{
+    GUI_THUMB_EDIT_STATE_OFF = 0,
+    GUI_THUMB_EDIT_STATE_NORMAL_ON,
+    GUI_THUMB_EDIT_STATE_EMERGENCY_ON,
+    GUI_THUMB_EDIT_STATE_PHOTO_ON,
+	GUI_THUMB_EDIT_STATE_DAS_ON,
+    GUI_THUMB_EDIT_STATE_NUM
+}GUI_THUMB_EDIT_STATE;
+
+typedef enum
+{
+	GUI_REC_STATE_STOP,
+	GUI_REC_STATE_START,
+	GUI_REC_STATE_NUM
+}GUI_REC_STATE;
+
+typedef enum
+{
+	GUI_EMERGENCY_REC_STOP,
+	GUI_EMERGENCY_REC_RUNNING,
+	GUI_EMERGENCY_REC_NUM
+}GUI_EMERGENCY_REC_STATE;
+
+typedef enum
+{
+	GUI_VIEW_INDEX_FRONT,
+	GUI_VIEW_INDEX_REAR,
+	GUI_VIEW_INDEX_LEFT,
+	GUI_VIEW_INDEX_RIGHT,
+	GUI_VIEW_INDEX_MATTS,
+	GUI_VIEW_INDEX_NUM
+}GUI_VIEW_INDEX;
+
+typedef enum
+{
+	GUI_SETUP_SPLIT_TIME_1MIN,
+	GUI_SETUP_SPLIT_TIME_3MIN,
+	GUI_SETUP_SPLIT_TIME_5MIN,
+	GUI_SETUP_SPLIT_TIME_NUM
+}GUI_SETUP_SPLIT_TIME;
+
+typedef enum
+{
+	GUI_SETUP_LANGUAGE_CHINESE,
+	GUI_SETUP_LANGUAGE_ENGLISH,
+	GUI_SETUP_LANGUAGE_ARABIAN,
+	GUI_SETUP_LANGUAGE_NUM
+}GUI_SETUP_LANGUAGE;
+
+typedef enum
+{
+	GUI_SETUP_VIDEO_QUALITY_SFINE,
+	GUI_SETUP_VIDEO_QUALITY_FINE,
+	GUI_SETUP_VIDEO_QUALITY_NORMAL,
+	GUI_SETUP_VIDEO_QUALITY_NUM
+}GUI_SETUP_VIDEO_QUALITY;
+
+typedef enum
+{
+	GUI_SETUP_PHOTO_QUALITY_SFINE,
+	GUI_SETUP_PHOTO_QUALITY_FINE,
+	GUI_SETUP_PHOTO_QUALITY_NORMAL,
+	GUI_SETUP_PHOTO_QUALITY_NUM
+}GUI_SETUP_PHOTO_QUALITY;
+
+typedef enum
+{
+	GUI_THUMB_TAB_LOOP_REC,
+	GUI_THUMB_TAB_EVENT_REC,
+	GUI_THUMB_TAB_PHOTO,
+	GUI_THUMB_TAB_DAS,
+	GUI_THUMB_TAB_NUM
+}GUI_THUMB_TAB;
+
+typedef enum
+{
+	GUI_THUMB_FRAME_CONTENT_NO_FILES,
+	GUI_THUMB_FRAME_CONTENT_THUMBNAIL,
+	GUI_THUMB_FRAME_CONTENT_NUM
+}GUI_THUMB_FRAME_CONTENT;
+
+typedef enum
+{
+	GUI_THUMB_EDIT_CMD_CANCEL,
+	GUI_THUMB_EDIT_CMD_NORMAL_TO_EMERGENCY,
+	GUI_THUMB_EDIT_CMD_DELETE,
+	GUI_THUMB_EDIT_CMD_SELECT_ALL,
+	GUI_THUMB_EDIT_CMD_NUM
+}GUI_THUMB_EDIT_CMD;
+
+typedef enum
+{
+	GUI_PLAY_STATE_INVALID,
+	GUI_PLAY_STATE_RUNNING,
+	GUI_PLAY_STATE_PAUSE,
+	GUI_PLAY_STATE_FAST_FORWARD,
+	GUI_PLAY_STATE_FAST_BACKWARD,
+	GUI_PLAY_STATE_STOP,
+	GUI_PLAY_STATE_NUM
+}GUI_PLAY_STATE;
+
+typedef enum
+{
+	GUI_PLAY_SPEED_X1,
+	GUI_PLAY_SPEED_X2,
+	GUI_PLAY_SPEED_X4,
+	GUI_PLAY_SPEED_X8,
+	GUI_PLAY_SPEED_NUM
+}GUI_PLAY_SPEED;
+
+typedef enum
+{
+    GUI_SIDEBAR_STATUS_HIDE,
+    GUI_SIDEBAR_STATUS_SHOW,
+    GUI_SIDEBAR_STATUS_NUM
+}GUI_SIDEBAR_STATUS;
+
+typedef enum
+{
+    GUI_PLAY_MODE_DVR,
+    GUI_PLAY_MODE_ALGO,
+    GUI_PLAY_MODE_NUM
+}GUI_PLAY_MODE;
+
+typedef struct
+{
+	float nTotalSpace;	//in GB
+	float nUsedSpace;
+}GUI_OBJ_THUMB_CAPCITY_INST;
+
+typedef struct
+{
+    unsigned char nCurPage;
+    unsigned char nTotalPage;
+}GUI_OBJ_THUMB_PAGENUM_INST;
+
+typedef struct
+{
+	char filename[128];
+}GUI_OBJ_PLAY_FILENAME_INST;
+
+typedef struct
+{
+	unsigned int duration; //in second
+	unsigned int position;
+}GUI_OBJ_PLAY_TIME_INST;
+
+typedef struct
+{
+	unsigned char check_box[NUM_THUMBNAIL_PER_PAGE]; //1:select, 0:not select
+}GUI_OBJ_THUMB_EDIT_INST;
+
+typedef struct
+{
+	char filename[128];
+	unsigned char *pPreviewBuf;
+	unsigned int ulPreviewHeight;
+	unsigned int ulPreviewWidth;
+	int color_format;	//0:PREVIEW_RGB565, 1:PREVIEW_RGB888, 2:PREVIEW_RGB32, 3:PREVIEW_YUV420, 4:PREVIEW_YUV422
+	unsigned char bValid;
+}GUI_OBJ_THUMB_ITEM;
+
+typedef struct
+{
+	GUI_OBJ_THUMB_ITEM item[NUM_THUMBNAIL_PER_PAGE];
+}GUI_OBJ_THUMB_FRAME_INST;
+
+typedef struct
+{
+	GUI_DIALOG_TYPE type;
+	DIALOG_SUBJECT_ID subjectId;
+}GUI_OBJ_DIALOG_INST;
+
+typedef struct
+{
+	unsigned short 	TimeYear;
+	unsigned short 	TimeMon;
+	unsigned short 	TimeDay;
+	unsigned short 	TimeHour;	
+	unsigned short 	TimeMin;
+	unsigned short 	TimeSec;
+
+	unsigned char	GpsLongitude_IsEast;
+	unsigned short	GpsLongitude_Deg;
+	unsigned short	GpsLongitude_Min;
+	unsigned short	GpsLongitude_Sec;
+
+	unsigned char	GpsLatitude_IsNorth;
+	unsigned short	GpsLatitude_Deg;
+	unsigned short	GpsLatitude_Min;
+	unsigned short	GpsLatitude_Sec;	
+	
+	unsigned short 	VehicleSpeed;
+	unsigned char 	GearShiftPositon;
+	unsigned char 	BrakePedalStatus;
+	unsigned char 	DriverBuckleSwitchStatus;
+	unsigned char 	LeftTurnLampStatus;
+	unsigned char 	RightTurnLampStatus;
+	unsigned char 	AccePedalPosition;
+	unsigned char 	EngineThrottlePosition;
+	unsigned char   VehicleSpeedValidity;
+	float   		LateralAcceleration;
+	float   		LongitudinalAcceleration;
+	unsigned char 	ApaRecstatus;
+	unsigned char 	IaccTakeOverRecstatus;
+	unsigned char 	AccTakeOverRecstatus;
+	unsigned char 	AEbCtrlAvailRecstatus;
+}GUI_OBJ_VEHICLE_DATA_INST;
+
+typedef enum
+{
+	GUI_OBJ_STATUS_TYPE_U32,
+	GUI_OBJ_STATUS_TYPE_POINTER,
+	GUI_OBJ_STATUS_TYPE_NUM
+}GUI_OBJ_STATUS_TYPE;
+
+typedef struct
+{
+	GUI_OBJ_ID Id;
+	const char Name[64];
+	unsigned char bEnable;
+	unsigned char bShow;
+	GUI_OBJ_STATUS_TYPE status_type;
+	union
+	{
+		unsigned int ObjVal;
+		void *ptr;
+	}uStatus;
+
+}DVR_GRAPHIC_UIOBJ;
+
+typedef enum
+{
+	GUI_LAYOUT_RECORD = 0,
+	GUI_LAYOUT_THUMB,
+	GUI_LAYOUT_PLAYBACK_VIDEO,
+	GUI_LAYOUT_PLAYBACK_IMAGE,
+	GUI_LAYOUT_SETUP,
+	GUI_LAYOUT_NUM
+}DVR_GUI_LAYOUT_TYPE;
+
+typedef struct
+{
+	DVR_GUI_LAYOUT_TYPE curLayout;
+	DVR_GRAPHIC_UIOBJ *pTable;
+	int ObjNum;
+}DVR_GUI_LAYOUT_INST;
+
+int Dvr_App_Get_GuiLayOut(DVR_GUI_LAYOUT_INST *pInst);
+
+#endif

@@ -1,0 +1,12 @@
+prefix=/home/chencb/samba/workdir/J6_GitRepo/dvr/build/../targetfs/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/gstreamer-@GST_MAJORMINOR@
+
+Name: GStreamer DRM buffer pool
+Description: DRM buffer pool for GStreamer elements
+Requires: gstreamer-@GST_MAJORMINOR@ gstreamer-base-@GST_MAJORMINOR@
+Version: 1.2.3
+Libs: -L${libdir} -lgstdrm-@GST_MAJORMINOR@
+Cflags: -I${includedir}
+

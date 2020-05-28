@@ -1,0 +1,151 @@
+diff --git a/dvr_sdk/source/FileSystem/FileBase.cpp b/dvr_sdk/source/FileSystem/FileBase.cpp
+index ceacea5..b2f6fc5 100755
+--- a/dvr_sdk/source/FileSystem/FileBase.cpp
++++ b/dvr_sdk/source/FileSystem/FileBase.cpp
+@@ -703,7 +703,7 @@ int CFileBase::SetHideAtrr(void)
+     if(fd < 0)
+     {
+         DPrint(DPRINT_ERR,"devname %s\n",strerror(errno));
+-        mount(m_devname, m_pMountpoint, "vfat", 0, 0);
++        mount(m_devname, m_pMountpoint, "tfat", 0, 0);
+         return DVR_RES_EFAIL;
+     }
+ 
+@@ -724,7 +724,7 @@ end:
+     if(ret < 0)
+         DPrint(DPRINT_ERR,"SetHideAtrr %s\n",strerror(errno));
+ 
+-    if(mount(m_devname, m_pMountpoint, "vfat", 0, 0) != 0)
++    if(mount(m_devname, m_pMountpoint, "tfat", 0, 0) != 0)
+     {
+         DPrint(DPRINT_ERR,"mount %s\n",strerror(errno));
+     }
+diff --git a/dvr_sdk/source/Monitor/DvrMonitor_Mount.cpp b/dvr_sdk/source/Monitor/DvrMonitor_Mount.cpp
+index a147144..55a19d2 100755
+--- a/dvr_sdk/source/Monitor/DvrMonitor_Mount.cpp
++++ b/dvr_sdk/source/Monitor/DvrMonitor_Mount.cpp
+@@ -295,7 +295,7 @@ void DvrMonitorMount::StartMonitor(std::list<DVR_DEVICE> *pDevices)
+ 				if(is_fat_partition(path))
+ 				{
+ 					//FatfsCheck(path);
+-					if (mount(path, dstpath, "vfat", 0, 0) == 0)
++					if (mount(path, dstpath, "tfat", 0, 0) == 0)
+ 					{			
+ 					    
+ 					    DPrint(DPRINT_INFO, "DvrMonitorMount::StartMonitor mount %s  %s \n",path,dstpath);
+@@ -670,7 +670,7 @@ void DvrMonitorMount::Monitor_MountTaskEntry(void *ptr)
+                             count++;
+                         }
+                         
+-						if (mount(srcpath, dstpath, "vfat", 0, 0) == 0) {
++						if (mount(srcpath, dstpath, "tfat", 0, 0) == 0) {
+                             
+ 							DPrint(DPRINT_ERR, "Monitor_MountTaskEntry mount srcpath:%s, dstpath:%s, devType:%d successfully\n", srcpath, dstpath, devType);
+ 							p->NotifyMount(devType, dstpath, srcpath, intfClass);
+diff --git a/dvr_sdk/source/Osa/osa_fs.cpp b/dvr_sdk/source/Osa/osa_fs.cpp
+index 1bbc1ca..7f3fbb1 100755
+--- a/dvr_sdk/source/Osa/osa_fs.cpp
++++ b/dvr_sdk/source/Osa/osa_fs.cpp
+@@ -130,7 +130,8 @@ DVR_RESULT DVR::OSA_FileMove(char *srcFn, char *dstFn)
+     {
+     	ret = g_file_move(source_file, dest_file, G_FILE_COPY_OVERWRITE, NULL, NULL, NULL, &error);
+ 		if(!ret || error)
+-    	{
++    	{
++    	    printf("OSA_FileMove ------ %s\n",strerror(errno));
+ 			res = DVR_RES_EFAIL;
+ 		}
+     }
+@@ -335,7 +336,7 @@ DVR_RESULT DVR::OSA_CardFormat(char *szDevicePath, char *szMountPoint)
+ #include <osa_mark.h>
+ 
+ //#define MKDOSFS_PATH	"/usr/sbin/mkdosfs"
+-#define MKDOSFS_PATH   "/sbin/mkfs.vfat"
++#define MKDOSFS_PATH   "/usr/sbin/mkfatfs"
+ 
+ 
+ 
+@@ -377,8 +378,8 @@ DVR_RESULT DVR::OSA_CardFormat(char *szDevicePath, char *szMountPoint)
+ 		char *args[4];
+ 
+ 		args[0] = MKDOSFS_PATH;
+-		args[1] = "-F32";
+-		args[2] = szDevicePath;
++		args[1] = szDevicePath;
++		args[2] = NULL;
+ 		args[3] = NULL;
+ 
+ 		if(execv(args[0], args) == -1)
+@@ -395,12 +396,12 @@ DVR_RESULT DVR::OSA_CardFormat(char *szDevicePath, char *szMountPoint)
+     
+ 	if(szMountPoint != NULL)
+ 	{
+-		mount_ret = mount(szDevicePath, szMountPoint, "vfat", 0, 0);
++		mount_ret = mount(szDevicePath, szMountPoint, "tfat", 0, 0);
+ 		DPrint(DPRINT_INFO, "OSA_CardFormat: mount srcpath:%s, dstpath:%s successfully\n", szDevicePath, szMountPoint);
+ 	}
+ 	else
+ 	{
+-		mount_ret = mount(szDevicePath, SD_MOUNT_POINT, "vfat", 0, 0);
++		mount_ret = mount(szDevicePath, SD_MOUNT_POINT, "tfat", 0, 0);
+ 		DPrint(DPRINT_INFO, "OSA_CardFormat: mount srcpath:%s, dstpath:%s successfully\n", szDevicePath,SD_MOUNT_POINT);
+ 	}
+ 
+diff --git a/dvr_sdk/source/Osa/osa_mark.cpp b/dvr_sdk/source/Osa/osa_mark.cpp
+index 1fd356a..54f37bf 100755
+--- a/dvr_sdk/source/Osa/osa_mark.cpp
++++ b/dvr_sdk/source/Osa/osa_mark.cpp
+@@ -246,7 +246,7 @@ static int SetMark(char* devicename, char* mountpoint, DVR_SDSPEED_TYPE type)
+     if(fd < 0)
+     {
+         DPrint(DPRINT_ERR,"devicename %s %s\n",devicename, strerror(errno));
+-        mount(devicename, mountpoint, "vfat", 0, 0);
++        mount(devicename, mountpoint, "tfat", 0, 0);
+         DPrint(DPRINT_ERR,"SetMark %s mount  %s %s\n",devicename,mountpoint );
+         return DVR_RES_EFAIL;
+     }
+@@ -269,7 +269,7 @@ end:
+     if(ret < 0)
+         DPrint(DPRINT_ERR,"SetMark %s\n",strerror(errno));
+     DPrint(DPRINT_ERR,"SetMark type=%d mount  %s %s\n",type,devicename,mountpoint );
+-    if(mount(devicename, mountpoint, "vfat", 0, 0) != 0)
++    if(mount(devicename, mountpoint, "tfat", 0, 0) != 0)
+     {
+         DPrint(DPRINT_ERR,"mount %s\n",strerror(errno));
+     }
+@@ -291,7 +291,7 @@ static int DelMark(char* devicename, char* mountpoint)
+     if(fd < 0)
+     {
+         DPrint(DPRINT_ERR,"devicename %s %s\n",devicename, strerror(errno));
+-        mount(devicename, mountpoint, "vfat", 0, 0);
++        mount(devicename, mountpoint, "tfat", 0, 0);
+         return DVR_RES_EFAIL;
+     }
+ 
+@@ -311,7 +311,7 @@ static int DelMark(char* devicename, char* mountpoint)
+ end:
+     close(fd);
+     DPrint(DPRINT_ERR,"DelMark   mount %s  %s\n",devicename,mountpoint);
+-    if(mount(devicename, mountpoint, "vfat", 0, 0) != 0)
++    if(mount(devicename, mountpoint, "tfat", 0, 0) != 0)
+     {
+         DPrint(DPRINT_ERR,"mount %s\n",strerror(errno));
+     }
+@@ -336,7 +336,7 @@ static int GetMark(char* devicename, char* mountpoint, DVR_U32 *type)
+     {
+         DPrint(DPRINT_ERR,"devicename %s %s\n",devicename, strerror(errno));
+         DPrint(DPRINT_ERR,"GetMark 1   mount %s  %s\n",devicename,mountpoint);
+-        mount(devicename, mountpoint, "vfat", 0, 0);
++        mount(devicename, mountpoint, "tfat", 0, 0);
+         return DVR_RES_EFAIL;
+     }
+ 
+@@ -355,7 +355,7 @@ static int GetMark(char* devicename, char* mountpoint, DVR_U32 *type)
+     }
+ end:
+     close(fd);
+-    if(mount(devicename, mountpoint, "vfat", 0, 0) != 0)
++    if(mount(devicename, mountpoint, "tfat", 0, 0) != 0)
+     {
+         DPrint(DPRINT_ERR,"mount %s\n",strerror(errno));
+     }
