@@ -1,6 +1,11 @@
 zlib 编译
 git clone https://github.com/madler/zlib.git          V=1.2.8
 修改Makefile
+export CC=/home/taohaiwu/workspace/qnx/QNX/external/sdk/qualcomm/qnx700_host/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-gcc
+echo $CC
+./configure --prefix=/home/taohaiwu/workspace/prefix
+make
+make install
 
 ffilib编译
 下载 https://sourceware.org/libffi/      V=3.2.1
